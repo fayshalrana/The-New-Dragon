@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBIcon, MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
+import { MDBCol, MDBRow, MDBBtn, MDBIcon, MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
 import { Button, Container } from 'react-bootstrap';
 import { authContext } from '../../AuthProvider/AuthProvider';
 import toast from 'react-hot-toast';
