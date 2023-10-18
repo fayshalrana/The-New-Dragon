@@ -9,7 +9,6 @@ const LeftNav = () => {
       .then(res => res.json())
       .then(data => setCatagories(data))
   }, [])
-  console.log(catagories)
   return (
     <div>
       <h3>All Category</h3>
