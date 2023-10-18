@@ -5,8 +5,10 @@ import { Col, Container, Row } from 'react-bootstrap'
 import LeftNav from '../Pages/Sheard/LeftNav/LeftNav'
 import RightNav from '../Pages/Sheard/RightNav/RightNav'
 import { Outlet } from 'react-router-dom'
+import useTitle from '../hocks/useTitle'
 
 const Main = () => {
+  useTitle("Home")
   return (
     <div>
         <Header></Header>

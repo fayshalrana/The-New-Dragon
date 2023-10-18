@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   {
     ptha: "/",
     element: <LoginLayout></LoginLayout>,
-    children:[
+    children: [
       {
         path: "/login",
         element: <Login></Login>,
@@ -36,12 +36,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Category></Category>,
-        loader: () => fetch("http://localhost:5000/news")
+        loader: () => fetch("https://the-new-dragon-server-1cgrash0p-fayshal-ranas-projects.vercel.app/news")
       },
       {
         path: "/Category/:id",
         element: <Category></Category>,
-        loader: ({ params }) => fetch(`http://localhost:5000/categry/${params.id}`)
+        loader: ({ params }) => fetch(`https://the-new-dragon-server-1cgrash0p-fayshal-ranas-projects.vercel.app/categry/${params.id}`)
       },
     ]
   },
@@ -51,8 +51,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/news/:id",
-        element:<PrivateRoute> <News></News></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
+        element: <PrivateRoute> <News></News></PrivateRoute>,
+        loader: ({ params }) => fetch(`https://the-new-dragon-server-1cgrash0p-fayshal-ranas-projects.vercel.app/news/${params.id}`)
       }
     ]
   },

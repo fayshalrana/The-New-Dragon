@@ -18,11 +18,13 @@ import { Form } from 'react-bootstrap';
 import { authContext } from '../../AuthProvider/AuthProvider';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import useTitle from '../../hocks/useTitle';
 
 
 
 
 const Register = () => {
+  useTitle("Register");
   const {registerUser, user} = useContext(authContext);
   const [accept, setAccept] = useState(false);
 
