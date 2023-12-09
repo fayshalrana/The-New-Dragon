@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { Spinner } from 'react-bootstrap';
 
 const PrivateRoute = ({children}) => {
-    const locatino = useLocation()
+    const location = useLocation()
     const {user, isLoading} = useContext(authContext)
     if(isLoading){
         return  <Spinner animation="border" />;
@@ -18,7 +18,7 @@ const PrivateRoute = ({children}) => {
         return (
            <>
            { toast.error("please loing your account")}
-            <Navigate to="/login" state={{from:locatino}} replace></Navigate>
+            <Navigate to="/login" state={{from:location }} replace></Navigate>
             </>
             )
     }

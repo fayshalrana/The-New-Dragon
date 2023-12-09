@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaShareAlt, FaBookmark, FaEye, FaRegStar, FaStar } from "react-icons/fa";
+import { FaShareAlt, FaBookmark, FaEye } from "react-icons/fa";
 import moment from 'moment';
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'

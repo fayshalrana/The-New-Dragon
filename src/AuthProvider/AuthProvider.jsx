@@ -38,11 +38,6 @@ const registerUser = (email, password)=>{
     return signOut(auth)
   }
 
-
-
-
-
- 
     const authInfo = {
       user,
       isLoading,
